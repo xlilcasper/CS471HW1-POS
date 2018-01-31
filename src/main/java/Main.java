@@ -107,6 +107,7 @@ public class Main extends Application implements Initializable {
             String paymentAmount = result.get().replace(Currency.getInstance(new Locale("EN","US")).getSymbol(),"");
             //make our payment
             register.makePayment(new Money(new BigDecimal(paymentAmount)));
+            System.out.println(register.getBalance().getAmount());
             if (register.getBalance().getAmount().compareTo(BigDecimal.ZERO)>=0) {
                 //Sale was paid for add change, print receipt, log sale
                 updateSaleDisplay(register.getReciept());
@@ -304,4 +305,5 @@ public class Main extends Application implements Initializable {
     public static boolean isId(String str) {
         return str.matches("\\d+");
     }
+
 }
