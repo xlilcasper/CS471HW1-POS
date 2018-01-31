@@ -1,0 +1,66 @@
+.root {
+-fx-base: rgb(50, 50, 50);
+-fx-background: rgb(50, 50, 50);
+-fx-control-inner-background:  rgb(50, 50, 50);
+}
+
+.tab {
+-fx-background-color: linear-gradient(to top, -fx-base, derive(-fx-base,30%));
+}
+
+.menu-bar {
+-fx-background-color: linear-gradient(to bottom, -fx-base, derive(-fx-base,30%));
+}
+
+.tool-bar:horizontal {
+-fx-background-color:
+linear-gradient(to bottom, derive(-fx-base,+50%), derive(-fx-base,-40%), derive(-fx-base,-20%));
+}
+
+.tab-pane {
+    -fx-background-color: #2b2b2b;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #2b2b2b;
+}
+
+.table-view {
+    -fx-table-cell-border-color:derive(-fx-base,+10%);
+    -fx-table-header-border-color:derive(-fx-base,+20%);
+}
+
+.text-field {
+    -fx-font-size: 18px;
+    -fx-prompt-text-fill: gray;
+    -fx-text-fill: white;
+}
+
+.total-label {
+     -fx-background-color: rgba(255,255,255,0.75),
+                           linear-gradient(to bottom,#333333 0%,#000000 100%);
+     -fx-background-insets: 0,1;
+     -fx-padding: 0px;
+     -fx-background-radius: 3px;
+     -fx-border-radius: 3px;
+     -fx-padding: 0px 10px 0px 0px;
+     -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.75),1,0,1,1);
+     -fx-font: 24px "Arial";
+     -fx-text-fill: limegreen;
+ }
+
+.button {
+     -fx-background-color:
+         linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+         linear-gradient(#020b02, #3a3a3a),
+         linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+         linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+         linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+     -fx-background-insets: 0,1,4,5,6;
+     -fx-background-radius: 9,8,5,4,3;
+     -fx-font-family: "Helvetica";
+     -fx-font-size: 18px;
+     -fx-font-weight: bold;
+     -fx-text-fill: white;
+     -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+ }
